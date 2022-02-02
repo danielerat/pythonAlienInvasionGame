@@ -1,20 +1,23 @@
 #!/usr/bin/python3
 import sys
 import pygame
-from settings import settings
+from settings import Settings
+from ship import Ship
 
 class AlienInvasion:
     """Overall Class to manage Game assets and behaviors."""
     def __init__(self):
         """Initialize the dame and create game resources."""
+        
         pygame.init()
-        self.settings=settings()
+        self.settings=Settings()
         
-        self.screen=pygame.display.set_mode(
-            (self.settings.screen_width, self.settings.screen_height)
-        )
+        self.screen=pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
+        
         pygame.display.set_caption("Alien Invasion")
-        
+        # Creating the Ship or i should say     
+            
+        self.ship=Ship(self)
         
       
     def run_game(self):
@@ -27,13 +30,14 @@ class AlienInvasion:
             
             # Redraw the screen during each pass through the loop.
             self.screen.fill(self.settings.bg_color) 
+            
+            self.ship.blitme()
             #Make the most recently Drawn screen visible    
             pygame.display.flip()
 
 
 if __name__=="__main__":
     #Make a game instance and run the game
-
     ai=AlienInvasion()
     ai.run_game()
         

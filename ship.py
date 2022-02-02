@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import pygame
 class Ship:
     """A class to manage the ship."""
