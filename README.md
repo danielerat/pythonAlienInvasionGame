@@ -9,10 +9,10 @@ Project Preview
 <img src="assets/scn.png" width="750" title="Alien Game">
 
 ## Setup/installation
-$ Must have the pygame module installed and that's pretty much it! 
-$ Clone the repo: https://github.com/danielerat/pythonAlienInvasionGame.git 
-$ cd in the pythonAlienInvasionGame folder
-$ Run the file alien_invasion.py and Enjoy.
+$ Must have the pygame module installed and that's pretty much it! <br>
+$ Clone the repo: https://github.com/danielerat/pythonAlienInvasionGame.git <br> 
+$ cd in the pythonAlienInvasionGame folder <br>
+$ Run the file alien_invasion.py and Enjoy. <br>
 
 
 
