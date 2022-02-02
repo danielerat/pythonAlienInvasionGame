@@ -34,6 +34,8 @@ class AlienInvasion:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+            
+                    
     def _update_screen(self):
         """Update Images ON the screen, and flip to the new Screen"""
         # Redraw the screen during each pass through the loop.
